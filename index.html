@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="game-container">
+      <div class="message-container">
+        <ul class="message-list">
+          <li class="js-hidden" id="maru-turn">
+            <span class="maru">O</span>の順番
+          </li>
+          <li id="batsu-turn">
+            <span class="batsu">X</span>の順番
+          </li>
+          <li class="js-hidden" id="maru-win">
+            <span class="maru">O</span>の勝ち！！
+          </li>
+          <li class="js-hidden" id="batsu-win">
+            <span class="batsu">X</span>の勝ち！！
+          </li>
+          <li class="js-hidden" id="draw">
+            引き分け
+          </li>
+        </ul>
+      </div>
+
+      <div class="squares-container">
+        <div class="squares-box">
+          <!-- 一行目 -->
+          <div class="square" id="1-1"></div>
+          <div class="square" id="1-2"></div>
+          <div class="square" id="1-3"></div>
+          <div class="square" id="2-1"></div>
+          <div class="square" id="2-2"></div>
+          <div class="square" id="2-3"></div>
+          <div class="square" id="3-1"></div>
+          <div class="square" id="3-2"></div>
+          <div class="square" id="3-3"></div>
+        </div>
+      </div>
+      <div class="btn-container">
+        <div class="js-hidden" id="reset-btn">
+          <span class="btn btn-reset">もう一回遊ぶ</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
